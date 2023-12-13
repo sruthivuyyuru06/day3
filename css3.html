@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- animation properties -->
+    <style>
+          div{
+            width: 150px;
+            height: 100px;
+            background-color: aquamarine;
+            position: relative;
+            animation-name: animation1;
+            animation-duration: 5s;
+            animation-delay: -2s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            animation-fill-mode: backwards;
+         
+        }
+        #div1{
+            animation-timing-function: linear;
+        }
+        #div2{
+            animation-timing-function: ease;
+        }
+        #div3{
+            animation-timing-function: ease-in;
+        }
+        #div4{
+            animation-timing-function: ease-out;
+        }
+        #div5{
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes animation1{
+           0%{background-color: indianred;left:0px;top: 0px;}
+           25%{background-color: bisque;left: 0px;top: 0px;}
+           50%{background-color: chartreuse;left: 500px;top: 0px;}
+           75%{background-color: darksalmon;left: 0px;top: 500px;}
+           100%{background-color: aqua;left: 0px;top: 0px;}   
+        }
+    </style>
+</head>
+<body>
+   
+    <div id="div1">linear
+    </div>
+    <div id="div2">ease
+    </div>
+    <div id="div3">ease-in
+    </div>
+    <div id="div4">ease-out
+    </div>
+    <div id="div5">ease-in-out
+    </div>
+
+</body>
+</html>
+
