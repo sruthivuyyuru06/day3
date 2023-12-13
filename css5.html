@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* flex box properties */
+        .flex-container{
+            display: flex;
+            width: 25%;
+            background-color: hotpink;
+            border: 1px solid cyan;
+            flex-direction: row;
+            flex-wrap:wrap;
+            align-items: flex-start; 
+
+        }
+        .items{
+            background-color: chartreuse;
+            margin: 5px;
+            border: 1px;
+            flex-direction: row-reverse;
+            padding: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="items">div1</div>
+        <div class="items">div2</div>
+        <div class="items">div3</div>
+        <div class="items">div4</div>
+    </div>
+</body>
+</html>
